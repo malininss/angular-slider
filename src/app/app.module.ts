@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainSliderComponent } from './main-slider/main-slider.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainSliderComponent
   ],
   imports: [
     BrowserModule,

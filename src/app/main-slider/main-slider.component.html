@@ -1,0 +1,22 @@
+<section class='slider'>
+
+  <div *ngFor="let slide of slides"
+    [style.backgroundImage]="'url(' + slide.img + ')'"
+    class="slider__slide"
+    [class.slider__slide-active]="slide.active"
+    >
+    <div class="slide__text">{{slide.text}}</div>
+  </div>
+  
+  <div class="slider__dots">
+    <div 
+      *ngFor="let dots of slides; let i = index"
+      class="slider__dot"
+      [class.slider__dot-active]="i === activeDotIndex"
+      (click)="changeSlide(i)"
+      >
+      </div>
+  </div>
+
+</section>
+
