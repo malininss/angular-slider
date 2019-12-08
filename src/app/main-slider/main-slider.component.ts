@@ -28,6 +28,7 @@ export class MainSliderComponent implements OnInit {
   activSlide: any = this.slides[0];
   activeSlideIndex: number = this.slides.length - 1;
   activeDotIndex:number = 0;
+  intervalID: any;
 
   constructor() {
   }
